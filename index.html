@@ -7,49 +7,44 @@
     <link rel="stylesheet" href="index.css" />
   </head>
 
-  <body>
-    <header class="header">
-      <div class="logo">
-        <img src="./image/249390.png" alt="Логотип" />
+  <body class="container">
+    <!-- Первый экран / Header / -->
+    <section class="intro-block">
+      <div class="wrap">
+        <header class="header">
+          <a href="#" class="header__logo">
+            <img src="./image/249390.png" alt="Логотип" />
+          </a>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item"><a href="#">Главная</a></li>
+              <li class="header__menu-item"><a href="#">Услуги</a></li>
+              <li class="header__menu-item"><a href="#">О нас</a></li>
+            </ul>
+          </nav>
+          <div class="header__btn">
+            <button class="header__btn-unit">Войти</button>
+            <button class="header__btn-unit">Зарегистрироваться</button>
+          </div>
+        </header>
+        <!-- Первый экран / Hero Block / -->
+        <main>
+          <section class="hero">
+            <div class="hero__content">
+              <h1 class="hero__content-title">Lorem ipsum dolor</h1>
+              <p class="hero__content-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro reiciendis atque sunt molestiae
+                maiores quibusdam neque modi aperiam, quis eius quos, earum amet, similique laboriosam ducimus sint
+                possimus ex.
+              </p>
+              <div class="hero__content-btn">
+                <button class="hero__content-btn-unit">Buy now</button>
+                <button class="hero__content-btn-unit">More information</button>
+              </div>
+            </div>
+          </section>
+        </main>
       </div>
-
-      <section class="right-block" aria-label="Навигация и действия">
-        <h2 class="visually-hidden">Навигация</h2>
-        <nav>
-          <ul class="menu">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">О нас</a></li>
-          </ul>
-        </nav>
-
-        <div class="buttons">
-          <button>Войти</button>
-          <button>Зарегистрироваться</button>
-        </div>
-      </section>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="content_block">
-          <div class="hero_text">
-            <h1>Lorem ipsum dolor</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro reiciendis atque sunt molestiae
-              maiores quibusdam neque modi aperiam, quis eius quos, earum amet, similique laboriosam ducimus sint
-              possimus ex.
-            </p>
-          </div>
-          <div class="hero_buttons">
-            <button>Buy now</button>
-            <button>More information</button>
-          </div>
-        </div>
-        <div class="hero_img">
-          <img src="./image/3159.jpg" alt="Приветственное изображение" />
-        </div>
-      </section>
-    </main>
+    </section>
   </body>
 </html>
