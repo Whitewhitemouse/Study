@@ -1,0 +1,112 @@
+.intro-block {
+  padding-top: 80px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  // flex-grow: 1 в CSS задаёт, насколько элемент внутри flex-контейнера может "расти", чтобы занять свободное пространство по ширине (или высоте — в зависимости от направления flex-контейнера).
+  // flex-grow: 1 - «Этому элементу можно увеличиваться, чтобы занять часть свободного пространства в контейнере.» Если у одного элемента flex-grow: 2, а у других 1, то он получит в 2 раза больше свободного пространства.
+  nav {
+    flex-grow: 1;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 48px;
+    text-decoration: none;
+
+    img {
+      margin-right: 8px;
+    }
+
+    p {
+      font-size: 20px;
+      color: #fafafa;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.header__menu {
+  &-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &-item {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fafafa;
+    line-height: 20px;
+
+    a {
+      text-decoration: none;
+      margin-right: 8px;
+      background: #0000008c;
+      backdrop-filter: blur(25px);
+      padding: 8px 12px;
+    }
+  }
+}
+
+.header__btn {
+  &-unit {
+    @include btn(#0000008c, 1px solid #2d293d, 4px, #fafafa, 16px, 700, 12px, 20px);
+  }
+}
+
+.nft {
+  display: flex;
+  padding-top: 200px;
+  padding-bottom: 130px;
+
+  &__info {
+    max-width: 741px;
+
+    &-title {
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 46px; /* 88.462% */
+      letter-spacing: -0.5px;
+      text-transform: capitalize;
+      margin-bottom: 16px;
+    }
+
+    &-text {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px; /* 116.667% */
+      color: #7c7a85;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    margin-top: 80px;
+    gap: 24px;
+    &--solid {
+      @include btn(#16141f, 1px solid #2d293d, 4px, #fafafa, 16px, 700, 18px, 20px);
+    }
+
+    &--trnsparent {
+      display: flex;
+      align-items: center;
+      @include btn(transparent, transparent, 4px, #7d3cfd, 16px, 700, 18px, 20px);
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 60px;
+    background: linear-gradient(184deg, rgba(0, 0, 0, 0) 53.87%, #07050f 96.37%),
+      url(../../Assets/Images/a1f9f066773cd1b026b1e7d8102baf13f11d1402.png) lightgray -140.064px -221.735px / 129.297%
+        129.297% no-repeat;
+    width: 100%;
+    height: 768px;
+    z-index: -1;
+  }
+}

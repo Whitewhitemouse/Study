@@ -1,0 +1,24 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #07050F; 
+}
+
+.container {
+  @include min-max(320px, 100%);
+}
+
+.wrap {
+  @include min-max(320px, 1180px);
+}
+
+p,
+a,
+h1, h2, h3, h4, h5, h6,
+button {
+  color: #FAFAFA
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

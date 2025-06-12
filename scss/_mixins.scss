@@ -1,0 +1,18 @@
+@mixin min-max($min-width, $max-width) {
+  min-width: $min-width; // Устанавливает минимальную ширину элемента (например, не сжиматься меньше 300px).
+  max-width: $max-width; // Устанавливает максимальную ширину элемента (например, не растягиваться больше 1200px).
+  box-sizing: border-box; // Это свойство говорит браузеру, что padding и border должны входить в размер элемента. Это удобно, чтобы ширина не «раздувалась».
+  margin: 0 auto; // Это устанавливает вертикальный отступ 0, а горизонтальный — авто, что центрирует блок по горизонтали, если задана ширина.
+}
+
+@mixin btn($bg-color, $bd, $bdrs, $color, $font-size, $font-weight, $p-top, $p-bottom) {
+  background-color: $bg-color;
+  border: $bd;
+  border-radius: $bdrs;
+  color: $color;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  padding:$p-top $p-bottom;
+  cursor: pointer;
+  backdrop-filter: blur(25px);
+}
