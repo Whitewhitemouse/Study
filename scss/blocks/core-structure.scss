@@ -1,0 +1,109 @@
+.core-structure {
+  &__title {
+    margin-top: 190px;
+    margin-bottom: 56px;
+    text-align: center;
+
+    &-small {
+      color: #7d3cfd;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px; /* 125% */
+    }
+
+    &-main {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px; /* 112.5% */
+    }
+
+    &-description {
+      color: #7c7a85;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 140% */
+    }
+  }
+
+  &__advantage {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+
+    &-item--blur {
+      display: flex;
+      height: 448px;
+      padding: 32px;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      border-radius: 16px;
+      border: 1px solid #2d293d;
+      background: linear-gradient(180deg, rgba(34, 31, 46, 0.36) -2.34%, rgba(22, 20, 31, 0) 100%);
+      backdrop-filter: blur(4px);
+      flex: 1 0 0;
+      overflow: hidden;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../../Assets/Images/1st.png) 0% 0% / 100px 100px repeat, rgba(255, 255, 255, 0.05);
+        mix-blend-mode: overlay;
+        opacity: 0.2;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    }
+
+    &-item {
+      display: flex;
+      height: 448px;
+      padding: 32px;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      border-radius: 16px;
+      border: 1px solid #2d293d;
+      background: linear-gradient(180deg, #221f2e -2.34%, rgba(22, 20, 31, 0) 100%);
+      flex: 1 0 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    &-icon {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    &-tag {
+      color: #7d3cfd;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px; /* 128.571% */
+      margin-bottom: 12px;
+    }
+
+    &-title {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px; /* 125% */
+      margin-bottom: 4px;
+    }
+
+    &-description {
+      color: #7c7a85;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 142.857% */
+    }
+  }
+}
