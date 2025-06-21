@@ -47,18 +47,40 @@
       flex: 1 0 0;
       overflow: hidden;
       position: relative;
+      z-index: 0;
 
-      &::before {
+      &::after {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
-        background: url(../../Assets/Images/1st.png) 0% 0% / 100px 100px repeat, rgba(255, 255, 255, 0.05);
-        mix-blend-mode: overlay;
-        opacity: 0.2;
+        background: url(../../Assets/Images/1st.png) rgba(211, 211, 211, 0) 0% 0% / 100px 100px repeat;
+        opacity: 0.3;
         width: 100%;
         height: 100%;
-        z-index: -1;
+        z-index: 2;
+      }
+
+      &__line {
+        position: absolute;
+        background: #7D3CFD;
+        width: 105px;
+        height: 4px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+      }
+
+      &__line--blur {
+        position: absolute;
+        background: #7D3CFD;
+        filter: blur(75px);
+        width: 105px;
+        height: 40px;
+        bottom: 10;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
 
@@ -75,6 +97,19 @@
       flex: 1 0 0;
       overflow: hidden;
       position: relative;
+      z-index: 0;
+
+       &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../../Assets/Images/1st.png) rgba(211, 211, 211, 0) 0% 0% / 100px 100px repeat;
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+      }
     }
 
     &-icon {
